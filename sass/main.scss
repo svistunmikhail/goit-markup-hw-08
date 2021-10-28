@@ -1,0 +1,26 @@
+// VARS ( переменные )
+@import './utils/vars';
+@import './utils/placeholders';
+// RESET ( все скидывания стилей )
+@import './base/reset';
+// COMMON ( общие стили )
+@import './base/common';
+// HIDDEN ( для скрытия )
+@import './utils/hidden';
+// COMPONENTS ( то что переиспользуется )
+@import './components/container';
+@import './components/section';
+@import './components/logo';
+// LAYOUT ( основные части сайта )
+@import './layout/header-logo';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/about';
+@import './layout/team';
+@import './layout/team-socials';
+@import './layout/clients';
+@import './layout/footer-socials';
+@import './layout/footer';
+@import './components/modal';
+@import './layout/portfolio';

@@ -1,0 +1,21 @@
+.logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color:var(--akcent-color)
+}
+
+.header__logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header__logo_black {
+    color: var(--secondary-akcent-text-color);
+}
+
+.box-left__footer-logo_white {
+    color: var(--akcent-text-color);;
+}
