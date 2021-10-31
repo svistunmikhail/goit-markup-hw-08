@@ -1,5 +1,15 @@
 .box-right {
+    margin-top: 60px;
+     @media screen and (min-width: 768px) {
+        
+       margin-left: 165px;
+        
+    }
+    @media screen and (min-width: 1200px) {
     margin-right: auto;
+    margin-left: auto;
+}
+    
 }
 
 .box-right__text { 
@@ -14,6 +24,8 @@
 
 .footer-socials {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-socials__item {

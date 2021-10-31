@@ -102,15 +102,28 @@ body {
 .logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: calc(28 / 24);
   color: var(--akcent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 26px 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header__logo_black {
@@ -129,9 +142,24 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
-.main-header {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .main-header {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-header {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav {
+    display: none;
+  }
 }
 
 .site-nav__link {
@@ -155,12 +183,32 @@ body {
 
 .site-nav__list {
   display: flex;
-  margin-left: 93px;
+  margin-left: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav__list {
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .site-nav__item:not(:last-child) {
@@ -168,7 +216,14 @@ body {
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
 }
 
 .site-nav .current {
@@ -204,8 +259,6 @@ body {
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -218,6 +271,13 @@ body {
 
 .contacts__link:hover, .contacts__link:focus {
   color: var(--akcent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .hero {
@@ -644,7 +704,20 @@ body {
 }
 
 .box-right {
-  margin-right: auto;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .box-right {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box-right {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .box-right__text {
@@ -659,6 +732,8 @@ body {
 
 .footer-socials {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-socials__item {
@@ -700,15 +775,34 @@ body {
   background-color: var(--secondary-backgraund-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
-.footer-box {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
 }
 
-.box-left {
-  margin-right: 70px;
+@media screen and (min-width: 768px) {
+  .footer-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box-left {
+    margin-right: 70px;
+  }
 }
 
 .footer-contacts__link-address {
@@ -742,8 +836,29 @@ address {
   margin-bottom: 9px;
 }
 
-.footer-form {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+  }
+}
+
+.footer-form-box {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form-box {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-box {
+    margin-left: auto;
+    margin-top: 0;
+  }
 }
 
 .footer-form-box__text {
@@ -757,7 +872,7 @@ address {
 }
 
 .footer-form__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -771,6 +886,7 @@ address {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
 }
 
 .footer-form__input:hover, .footer-form__input:focus {
@@ -782,6 +898,13 @@ address {
   font-size: 16px;
   line-height: calc(20 / 16);
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-form__btn {
