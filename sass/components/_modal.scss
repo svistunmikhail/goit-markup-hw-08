@@ -17,15 +17,20 @@
         .modal {
             transform: scale(2) ;
         }
-        // @media screen and (max-width: 767px) {
-        //     padding: 15px 93px;
-        // }
+    }
+    @media screen and (min-width: 320px) {
+        padding: 15px;
+        overflow-y: scroll;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 159px;
+        overflow-y: scroll;
     }
 }
 
 .modal {
     position: relative;
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
     padding: 40px;
     background: var(--akcent-text-color);
@@ -35,6 +40,10 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media  screen and (max-width: 1199px) {
+        max-width: 450px;
+        max-height: 609px;
+    }
 }
 
 .modal__close-icon {
@@ -71,6 +80,12 @@
     text-align: center;
     margin-top: 0;
     margin-bottom: 12px;
+    @media screen and (max-width: 1199px) {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(30 / 20);
+        text-align: center;
+    }
 }
 
 .modal-field {
@@ -156,13 +171,18 @@
 }
 
 .checkbox-wrap__text {
-font-weight: 400;
-font-size: 14px;
-line-height: calc(24 / 14);
-color: var(--secondary-text-color);
-display: flex;
-align-items: center;
-justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        letter-spacing: 0.03em;
+    }
 }
 
 .checkbox-wrap__custom-checkbox {

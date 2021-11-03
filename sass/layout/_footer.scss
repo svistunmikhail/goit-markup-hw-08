@@ -12,12 +12,13 @@
     
     @media screen and (min-width: 768px) {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: baseline;
     }
 }
 
 .footer-box {
+
     @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
