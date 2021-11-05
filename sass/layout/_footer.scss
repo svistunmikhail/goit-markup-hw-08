@@ -106,7 +106,6 @@ address {
     border-radius: 4px;
     background-color: var(--secondary-backgraund-color);
     padding: 15px 16px;
-    margin-right: 12px;
     color: var(--akcent-text-color);
     outline: none;
     transition-property: border;
@@ -124,8 +123,9 @@ address {
     }
     margin-bottom: 20px;
     @media screen and (min-width: 1200px) {
-     width: 358px;
-     margin-bottom: 0;
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
     }
     
 }

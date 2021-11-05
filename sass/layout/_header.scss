@@ -97,6 +97,9 @@
     line-height: 40px;
     letter-spacing: 0.02em;
     color: var( --akcent-color);
+    @media screen and (max-width: 479px) {
+        font-size: 24px;
+    }
 }
 
 .mob-menu-contacts__item {
@@ -112,6 +115,7 @@
 
 .mob-menu-socials {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mob-menu-socials__item:not(:last-child) {
@@ -180,6 +184,18 @@
 .site-nav__item {
     &:not(:last-child){
         margin-right: 30px;
+    }
+}
+
+.contacts__email {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 21px;
+    }
+}
+
+.contacts__tel {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 17px;
     }
 }
 

@@ -59,12 +59,12 @@
         </nav>
         <ul class="contacts list">
             <li class="contacts__item">                    
-                <a href="mailto:info@devstudio.com" class="contacts__link link">
+                <a href="mailto:info@devstudio.com" class="contacts__link link contacts__email ">
                      <svg class="contact__icon">
                             <use href="./images/symbol-defs.svg#envelope"></use>
                         </svg>
                     info@devstudio.com</a></li>
-            <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link link ">
+            <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link link contacts__tel">
                 <svg class="contact__icon phone ">
                     <use href="./images/symbol-defs.svg#smartphone"></use>
                 </svg>
@@ -136,24 +136,34 @@
                 <ul class="about__list list">
                     <li class="about__item">
                         <div class="img-box">
+                            <picture>
+                                <source 
+                                    srcset="./images/desk/about/1x/img.jpg 1x,
+                                            ./images/desk/about/2x/img.jpg 2x"
+                                    media="(min-width: 1200px )" >
+                                    
                             <img
-                                srcset="./images/box1.jpg 1x,
-                                ./images/box1-2x.jpg 2x" 
-                                src="./images/box1.jpg" 
+                                src="./images/desk/about/1x/img.jpg" 
                                 alt="Пишет программу" 
                                 width="370">
+                            </picture>
                             <p class="img-box__text">Десктопные приложения</p>
                         </div>
                     </li>
 
                     <li class="about__item">
                         <div class="img-box">
-                            <img 
-                                srcset="./images/box2.jpg 1x,
-                                ./images/box2-2x.jpg 2x"
-                                src="./images/box2.jpg" 
-                                alt="Адаптирует под телефон" 
+                            <picture>
+                                <source 
+                                    srcset="./images/desk/about/1x/img-1.jpg 1x,
+                                            ./images/desk/about/2x/img-1.jpg 2x"
+                                    media="(min-width: 1200px )" >
+                                    
+                            <img
+                                src="./images/desk/about/1x/img-1.jpg" 
+                                alt="Адаптирует" 
                                 width="370">
+                            </picture>
                             <p class="img-box__text">Мобильные приложения</p>
                         </div>
                         
@@ -161,12 +171,17 @@
 
                     <li class="about__item">
                         <div class="img-box">
-                            <img 
-                                srcset="./images/box3.jpg 1x,
-                                ./images/box3-2x.jpg 2x"
-                                src="./images/box3.jpg" 
-                                alt="Адаптирует под планшет" 
+                            <picture>
+                                <source 
+                                    srcset="./images/desk/about/1x/img-2.jpg 1x,
+                                            ./images/desk/about/2x/img-2.jpg 2x"
+                                    media="(min-width: 1200px )" >
+                                    
+                            <img
+                                src="./images/desk/about/1x/img-2.jpg" 
+                                alt="Дизайн" 
                                 width="370">
+                            </picture>
                             <p class="img-box__text">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -179,11 +194,25 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img class="team__foto"
+                        <picture>
+                                <source 
+                                    srcset="./images/desk/team/1x/img-min.jpg 1x,
+                                            ./images/desk/team/2x/img-min.jpg 2x"
+                                    media="(min-width: 1200px )" >
+                                <source 
+                                    srcset="./images/tab/team/1x/img1x-min.jpg 1x,
+                                            ./images/tab/team/2x/img2x-min.jpg 2x"
+                                    media="(min-width: 768px )" >
+                                <source 
+                                    srcset="./images/mobile/team/1x/img1x-min.jpg 1x,
+                                            ./images/mobile/team/2x/img2x-min.jpg 2x"
+                                    media="(min-width: 320px )" >     
+                            <img class="team__foto"
                             srcset="./images/img.jpg 1x, 
                             ./images/img2x.jpg 2x" 
-                            src="./images/img.jpg" 
+                            src="./images/desk/team/1x/img-min.jpg" 
                             alt="Фото" width="270">
+                            </picture>
                 <div class="team-box">
                     <h3 class="team-box__title">Игорь Демьяненко</h3>
                     <p class="team-box__text">Product Designer</p>
@@ -225,12 +254,25 @@
                     </li>
 
                     <li class="team__item">
-                        <img class="team__foto"
-                            srcset="./images/img(1).jpg 1x,
-                             ./images/img(1)2x.jpg 2x" 
-                            src="./images/img(1).jpg" 
-                            alt="Фото" 
-                            width="270">
+                        <picture>
+                                <source 
+                                    srcset="./images/desk/team/1x/img-1-min.jpg 1x,
+                                            ./images/desk/team/2x/img-1-min.jpg 2x"
+                                    media="(min-width: 1200px )" >
+                                <source 
+                                    srcset="./images/tab/team/1x/img1-1x-min.jpg 1x,
+                                            ./images/tab/team/2x/img1-2x-min.jpg 2x"
+                                    media="(min-width: 768px )" >
+                                <source 
+                                    srcset="./images/mobile/team/1x/img1-1x-min.jpg 1x,
+                                            ./images/mobile/team/2x/img1-2x-min.jpg 2x"
+                                    media="(min-width: 320px )" >     
+                            <img class="team__foto"
+                            srcset="./images/img.jpg 1x, 
+                            ./images/img2x.jpg 2x" 
+                            src="./images/desk/team/1x/img-1-min.jpg" 
+                            alt="Фото" width="270">
+                            </picture>
                 <div class="team-box">
                     <h3 class="team-box__title">Ольга Репина</h3>
                     <p class="team-box__text">Frontend Developer</p>
@@ -271,12 +313,25 @@
                     </li>
 
                     <li class="team__item">
-                        <img class="team__foto"
-                            srcset="./images/img(2).jpg 1x, 
-                            ./images/img(2)2x.jpg 2x" 
-                            src="./images/img(2).jpg" 
-                            alt="Фото" 
-                            width="270">
+                         <picture>
+                                <source 
+                                    srcset="./images/desk/team/1x/img-2-min.jpg 1x,
+                                            ./images/desk/team/2x/img-2-min.jpg 2x"
+                                    media="(min-width: 1200px )" >
+                                <source 
+                                    srcset="./images/tab/team/1x/img2-1x-min.jpg 1x,
+                                            ./images/tab/team/2x/img2-2x-min.jpg 2x"
+                                    media="(min-width: 768px )" >
+                                <source 
+                                    srcset="./images/mobile/team/1x/img2-1x-min.jpg 1x,
+                                            ./images/mobile/team/2x/img2-2x-min.jpg 2x"
+                                    media="(min-width: 320px )" >    
+                            <img class="team__foto"
+                            srcset="./images/img.jpg 1x, 
+                            ./images/img2x.jpg 2x" 
+                            src="./images/desk/team/1x/img-2-min.jpg" 
+                            alt="Фото" width="270">
+                            </picture>
                 <div class="team-box">
                     <h3 class="team-box__title">Николай Тарасов</h3>
                     <p class="team-box__text">Marketing</p>
@@ -317,12 +372,25 @@
                     </li>
 
                     <li class="team__item">
-                        <img class="team__foto" 
-                            srcset="./images/img(3).jpg 1x, 
-                            ./images/img(3)2x.jpg 2x"
-                            src="./images/img(3).jpg" 
-                            alt="Фото" 
-                            width="270">                        
+                         <picture>
+                                <source 
+                                    srcset="./images/desk/team/1x/img-3-min.jpg 1x,
+                                            ./images/desk/team/2x/img-3-min.jpg 2x"
+                                    media="(min-width: 1200px )" >
+                                <source 
+                                    srcset="./images/tab/team/1x/img3-1x-min.jpg 1x,
+                                            ./images/tab/team/2x/img3-2x-min.jpg 2x"
+                                    media="(min-width: 768px )" >
+                                <source 
+                                    srcset="./images/mobile/team/1x/img3-1x-min.jpg 1x,
+                                            ./images/mobile/team/2x/img3-2x-min.jpg 2x"
+                                    media="(min-width: 320px )" > 
+                            <img class="team__foto"
+                            srcset="./images/img.jpg 1x, 
+                            ./images/img2x.jpg 2x" 
+                            src="./images/desk/team/1x/img-3-min.jpg" 
+                            alt="Фото" width="270">
+                            </picture>      
                 <div class="team-box">
                     <h3 class="team-box__title">Михаил Ермаков</h3>
                     <p class="team-box__text">UI Designer</p>
